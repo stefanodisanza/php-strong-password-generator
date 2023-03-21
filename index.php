@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<div class="container mt-5">
+  <h1>GENERATORE DI PASSWORD</h1>    
+
 <?php
 session_start();
 
@@ -23,11 +26,13 @@ if (isset($_GET['lunghezza'])) {
 ?>
 
 <form method="get">
-  <label for="lunghezza">Lunghezza della password:</label>
-  <input type="number" id="lunghezza" name="lunghezza" min="1" max="20">
-  <br>
-  <br>
-  <input type="submit" value="Genera Password">
+    <div class="mb-3">
+        <label for="lunghezza">Lunghezza della password:</label>
+        <input type="number" id="lunghezza" name="lunghezza" min="8" max="25">
+        <br>
+        <br>
+        <input type="submit" value="Genera Password" class="btn btn-warning">
+    </div>
 </form>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
