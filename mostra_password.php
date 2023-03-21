@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 <body>
+<h1 class="title mt-5">GENERATORE DI PASSWORD</h1>  
 <div class="container mt-5">
     <div class="mb-3">
         <?php

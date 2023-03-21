@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<h1 class="title mt-5">GENERATORE DI PASSWORD</h1>  
 <div class="container mt-5">
-  <h1>GENERATORE DI PASSWORD</h1>    
+    
 
 <?php
 session_start();
