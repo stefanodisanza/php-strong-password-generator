@@ -9,7 +9,16 @@
 <body>
     
 <?php
+session_start();
+
 include 'functions.php';
+
+if (isset($_GET['lunghezza'])) {
+    $lunghezza = $_GET['lunghezza'];
+    $password = generaPassword($lunghezza);
+    $_SESSION['password'] = $password;
+    header('Location: mostra_password.php');
+}
 ?>
 
 <form method="get">
